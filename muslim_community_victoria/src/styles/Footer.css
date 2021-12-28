@@ -1,0 +1,39 @@
+@import url('https://fonts.googleapis.com/css2?family=Fuzzy+Bubbles&display=swap');
+
+.footer{
+    height: 25%;
+    width: 100%;
+    background-color: #a0a029;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    padding: 1rem;
+}
+
+.footer-text{
+    font-family: 'Fuzzy Bubbles', cursive;
+    font-size: 1.5rem;
+    color: #fff;
+    line-height: 2rem;
+}
+.footer-btn{
+    font-family: 'Fuzzy Bubbles', cursive;
+    margin-top: 1rem;
+    color: #fff;
+    text-transform: uppercase;
+    background-color:#a0a029;
+    width: 15rem;
+    padding: 2rem;
+    font-size: 1.5rem;
+    font-weight: 700;
+    letter-spacing: 0.2rem;
+    border-radius: 5rem;
+    border: 0.1rem solid #fff;
+    cursor: pointer;
+    margin-right: 1rem;
+}
+
+.footer-btn:hover{
+    cursor: pointer;
+    background-color:#909056;
+}

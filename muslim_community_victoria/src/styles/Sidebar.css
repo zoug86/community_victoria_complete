@@ -1,0 +1,63 @@
+.sidebar{
+    position: fixed;
+    top: 50%;
+    left: -1.6rem;
+    transform: translateY(-50%);
+    z-index: 99999;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    transition: left 0.5s ease;
+}
+
+.nav-toggler{
+    position: absolute;
+    cursor: pointer;
+    background: #3b5998;
+    font-size: 1rem;
+    display: flex;
+    width: 1.3rem;
+    height: 1.3rem;
+    top: 0;
+    right: -1.3rem;
+    color: #fff;
+}
+
+.icon-link{
+    display: flex;
+    width: 2rem;
+    height: 2rem;
+    text-decoration: none;
+    color: #fff;
+    font-size: 1.3rem;
+    margin-bottom: 0.1rem;
+    padding: 0.2rem;
+}
+
+.nav-toggler FontAwesome, .icon-link FontAwesome{
+   margin: auto;
+}
+
+.icon-link.facebook{
+    background: #3b5998;
+}
+
+.icon-link.twitter{
+    background: #00aced;
+}
+
+.icon-link.instagram{
+    background: #e1306c;
+}
+
+.icon-link.linkedin{
+    background: #007bb6;
+}
+
+.icon-link.whatsapp{
+    background: #25d366;
+}
+
+.sidebar.active{
+    left: 0;
+}

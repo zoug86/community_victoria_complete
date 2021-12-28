@@ -1,0 +1,16 @@
+node_modules
+muslim_community_victoria/node_modules
+
+# testing
+/coverage
+
+# production
+/muslim_community_victoria/build
+
+# misc
+.DS_Store
+.env.local
+.env
+.env.development.local
+.env.test.local
+.env.production.local
