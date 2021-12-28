@@ -37,7 +37,7 @@ const Contact = () => {
     }
 
     return (
-        <section id="section-4" className="section-4">
+        <section className="section-4" id='contact'>
             <div className="bar-text">
 
                 <h1 className='section-4-title'>Contact <FontAwesomeIcon className='icon' icon={faHeart} /></h1>
@@ -53,10 +53,10 @@ const Contact = () => {
                         <p className="form-header-text">Have something in mind? Contact Us!</p>
                     </div>
                     <form className="form" action="" onSubmit={handleSubmit}>
-                        <input className="name input" type="text" placeholder="Full Name" value={name} onChange={e => setName(e.target.value)} />
-                        <input className="email input" type="email" placeholder="Email" value={email} onChange={e => setEmail(e.target.value)} />
-                        <input className="subject input" type="text" placeholder="Subject" value={subject} onChange={e => setSubject(e.target.value)} />
-                        <textarea className="message" placeholder="Enter your message" rows="5" cols="33" value={message} onChange={e => setMessage(e.target.value)}></textarea>
+                        <input required className="name input" type="text" placeholder="Full Name" value={name} onChange={e => setName(e.target.value)} />
+                        <input required className="email input" type="email" placeholder="Email" value={email} onChange={e => setEmail(e.target.value)} />
+                        <input required className="subject input" type="text" placeholder="Subject" value={subject} onChange={e => setSubject(e.target.value)} />
+                        <textarea required className="message" placeholder="Enter your message" rows="5" cols="33" value={message} onChange={e => setMessage(e.target.value)}></textarea>
                         <button className="form-btn" type="submit">Send</button>
                     </form>
 

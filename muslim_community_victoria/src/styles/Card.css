@@ -1,4 +1,7 @@
-.MuiCardMedia-root.MuiCardMedia-media.MuiCardMedia-img.css-o69gx8-MuiCardMedia-root{
-   height: 100%;
-   width: 500px;
+
+@media screen and (max-width: 900px){
+   .MuiCardMedia-img{
+      height: 50%;
+   }
+
 }

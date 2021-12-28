@@ -27,7 +27,7 @@ const resources = [zero, one, two, three, four, five, six, seven, eight, nine];
 
 const Body = () => {
     return (
-        <div className="body">
+        <div className="body" id='home'>
             <img className='victoria-img' src={victoria} alt="victoria" />
             <div className="body-text">
                 <h1 className='body-text-title'>ONE COMMUNITY FOR ALL <FontAwesomeIcon className='icon' icon={faHeart} /></h1>
@@ -39,7 +39,7 @@ const Body = () => {
                 <CustomImageGallery images={resources} />
                 <MediaCard image={foodBank} title="Food Bank" />
             </div>
-            < div className="about-us">
+            < div className="about-us" id="about-us">
                 <h1 className='about-us-title'>About Us <FontAwesomeIcon className='icon' icon={faHeart} /></h1>
                 <div className='about-us-images'>
                     <img className="about-us-img" src={aboutUs1} alt="aboutUs1" />

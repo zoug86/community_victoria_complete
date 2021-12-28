@@ -11,7 +11,7 @@ import { faComment, faFutbol } from '@fortawesome/free-regular-svg-icons'
 
 const Services = () => {
     return (
-        <section id="section-3" className="section-3">
+        <section className="section-3" id='services'>
             <div className="section-3-1">
                 <h1 className='section-3-1-title'>Our Services <FontAwesomeIcon className='icon' icon={faHeart} /></h1>
                 <div className="section-3-1-btns">

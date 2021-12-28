@@ -5,9 +5,9 @@
     width: 100%;
     background-color: #a0a029;
     display: flex;
-    justify-content: space-evenly;
+    justify-content: space-between;
     align-items: center;
-    padding: 1rem;
+    padding: 3rem 0 3rem 2rem;
 }
 
 .footer-text{
@@ -15,6 +15,11 @@
     font-size: 1.5rem;
     color: #fff;
     line-height: 2rem;
+}
+.btns{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
 }
 .footer-btn{
     font-family: 'Fuzzy Bubbles', cursive;
@@ -36,4 +41,29 @@
 .footer-btn:hover{
     cursor: pointer;
     background-color:#909056;
+}
+
+@media screen and (max-width: 1100px){
+    .footer-text{
+        font-size: 1.2rem;
+        line-height: 1.5rem;
+    }
+    .footer-btn{  
+        width: 12rem;
+        padding: 1.5rem;
+        font-size: 1.2rem;
+    }
+}
+
+@media screen and (max-width: 700px){
+    .btns{
+        flex-direction: column;
+    }
+}
+
+@media screen and (max-width: 500px){
+    .btns{
+        display: none;
+    }
+    
 }

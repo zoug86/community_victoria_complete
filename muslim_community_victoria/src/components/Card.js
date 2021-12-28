@@ -20,10 +20,10 @@ export default function MediaCard({ image, title }) {
             />
             <CardMedia
                 component="img"
-                height="700"
-                width="400"
                 image={image}
                 alt={title}
+                sx={{ height: "600px" }}
+                className="media-card"
             />
 
         </Card>

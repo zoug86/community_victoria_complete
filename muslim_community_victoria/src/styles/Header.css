@@ -13,6 +13,14 @@
     font-size: 17px;
 }
 
+@media screen and (max-width: 700px){
+    .top-bar{
+        display: flex;
+        flex-direction: column;
+        height: 12vh;
+    }   
+}
+
 .icon{
     margin-right: 10px;
     color: rgb(204, 112, 112);
@@ -35,10 +43,31 @@
     padding: 0 !important;
 }
 
+@media screen and (max-width: 700px){
+    .navbar.navbar-expand-lg.navbar-light.bg-light{
+        top: 12vh;
+    }   
+}
+
 .navbar-light .navbar-brand{
     color: rgb(246, 242, 242) !important;
     font-family: 'Corinthia', cursive;
     font-size: 30px;
+    width: 100%;
+}
+
+@media screen and (max-width: 1000px){
+    .navbar-light .navbar-brand{   
+        font-size: 25px;
+        width: 50%;
+    }
+}
+
+@media screen and (max-width: 450px){
+    .navbar-light .navbar-brand{   
+        font-size: 20px;
+        width: 50%;
+    }
 }
 
 .logo{
@@ -50,6 +79,18 @@
 .navbar-collapse{
     padding-left: 200px;
     width: 100%;
+    color: rgb(191, 191, 63);
+}
+
+button.navbar-toggler.collapsed, .navbar-toggler.collapsed:hover, .navbar-toggler.collapsed:focus, .navbar-toggler.collapsed:active{
+    background-color: rgb(191, 191, 63);
+}
+
+@media screen and (max-width: 1000px){
+    .navbar-collapse{
+        padding-left: 0;
+        width: 10%;
+    }
 }
 .navbar-nav{
     width: 100%;
@@ -64,6 +105,12 @@
     font-size: 25px;
     margin-right: 5px;
     font-weight: bold;
+}
+
+@media screen and (max-width: 1200px){
+    .nav-link{
+        font-size: 20px;
+    }
 }
 
 .nav-link:hover{

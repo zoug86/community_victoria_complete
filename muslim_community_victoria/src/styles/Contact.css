@@ -10,7 +10,7 @@
     position: relative;
     background-color: rgb(247, 248, 248);
     text-align: center;
-    padding-top: 50px;
+    padding-top: 10px;
 }
 
 @import url('https://fonts.googleapis.com/css2?family=Fuzzy+Bubbles&display=swap');
@@ -20,6 +20,7 @@
 }
 
 .section-4-title{
+    margin-top: 90px;
     font-family: 'Fuzzy Bubbles', cursive;
     display: inline-block;
     font-size: 60px;
@@ -52,7 +53,7 @@
 }
 
 .section-4-img{
-    height: 100vh;
+    height: 110vh;
     background-image: url("../resources/muslim.jpg");
     background-repeat: no-repeat;
     background-size: cover;
@@ -67,13 +68,13 @@
     background-color: rgb(0,0,0); /* Fallback color */
     background-color: rgba(0,0,0, 0.6); /* Black w/opacity/see-through */
     /* border: 3px solid#f1f1f1; */
-    width: 35%;
+    width: 50%;
     height: auto;
     position: absolute;
     top: 55%;
     left: 50%;
     transform: translate(-50%, -50%);
-    padding: 0 0 2rem 0;
+    padding: 0 0 1rem 0;
     margin-top: 3rem;
     border-radius: 10px;
     box-shadow: 5px 5px 10px #000000;
@@ -95,7 +96,7 @@
     font-size: 2rem;
     line-height: 2.3rem;
     font-style: italic;
-    padding: 1.5rem;
+    padding: 1rem 1.2rem;
     color: #fff;
     font-family: 'Fuzzy Bubbles', cursive;
     letter-spacing: 0.1rem;
@@ -110,21 +111,21 @@
 
 .input, .message{
     width: 85%;
-    padding: 1rem;
-    margin: 0rem 1rem 1.5rem 1.5rem;
+    padding: 0.75rem;
+    margin: 0rem 1rem 0.5rem 1rem;
     background-color: rgb(63, 60, 60);
     color: white;
     border: none;
     border-radius: 0.2rem;
-    font-size: 1.6rem;
+    font-size: 1.2rem;
     font-family: 'Fuzzy Bubbles', cursive;
 }
  
 
 .form-btn{
     width: 85%;
-    padding: 1.5rem;
-    font-size: 2.2rem;
+    padding: 1rem;
+    font-size: 2rem;
     font-weight: bold;
     background-color: #a0a029;
     border-radius: 1rem;
@@ -133,6 +134,54 @@
 }
 
 .form-btn:hover{
- cursor: pointer;
- background-color: #909056;
+    cursor: pointer;
+    background-color: #909056;
+}
+
+@media screen and (max-width: 1100px){
+    .section-4-title{
+        font-size: 40px;
+    }
+    .section-4-title::before{
+        transform: translateY(50px);
+        width: 200px;
+    }
+    
+    .section-4-title::after{
+        transform: translateY(-6px);
+    }
+    .section-4-form{
+        width: 80%;
+    }
+}
+
+@media screen and (max-width: 700px){
+    .section-4-title{
+        font-size: 30px;
+    }
+    .section-4-title::before{
+        transform: translateY(40px);
+        width: 150px;
+    }
+    
+    .section-4-title::after{
+        transform: translateY(-4px);
+        width: 60px;
+    }
+    .section-4-form{
+        width: 95%;
+    }
+}
+
+@media screen and (max-width: 1100px){
+    .form-header{
+        margin-bottom: 1rem;
+        padding: 0;
+    }
+    
+    .form-header-text{
+        font-size: 1rem;
+        line-height: 1.5rem;
+        padding: 1rem;
+    }
 }
